@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".AuthenticationActivity">
+
+       <TextView
+           android:id="@+id/reg_txt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="32dp"
+           android:fontFamily="@font/libre_baskerville_bold"
+           android:padding="20dp"
+           android:text="@string/step_into_a_world_where_art_meets_community_create_share_and_inspire_your_journey_begins_here"
+           android:textAlignment="center"
+           android:textColor="@color/brand_beige"
+           android:textSize="20sp"
+           app:layout_constraintEnd_toEndOf="@id/reg_img"
+           app:layout_constraintHorizontal_bias="0.875"
+           app:layout_constraintStart_toStartOf="@+id/reg_img"
+           app:layout_constraintTop_toBottomOf="@+id/reg_img" />
+
+       <ImageView
+           android:id="@+id/reg_img"
+           android:layout_width="400dp"
+           android:layout_height="400dp"
+           android:layout_marginTop="16dp"
+           android:src="@drawable/onboarding_illu"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <Button
+           android:id="@+id/btnr_sign_up"
+           android:layout_width="350dp"
+           android:layout_height="60dp"
+           android:layout_marginTop="44dp"
+           android:backgroundTint="@color/brand_beige"
+           android:fontFamily="@font/poppins_bold"
+           android:text="@string/sign_up"
+           android:textColor="@color/brand_0"
+           android:textColorLink="@color/brand_2"
+           android:textSize="20sp"
+           app:cornerRadius="7dp"
+           app:layout_constraintEnd_toEndOf="@+id/reg_txt"
+           app:layout_constraintStart_toStartOf="@+id/reg_txt"
+           app:layout_constraintTop_toBottomOf="@+id/reg_txt" />
+
+       <Button
+           android:id="@+id/btnr_log_in"
+           android:layout_width="350dp"
+           android:layout_height="60dp"
+           android:layout_marginTop="12dp"
+           android:fontFamily="@font/poppins_bold"
+           android:text="@string/log_in"
+           android:textColor="@color/brand_beige"
+           android:textColorLink="@color/brand_2"
+           android:textSize="20sp"
+           app:cornerRadius="7dp"
+           app:layout_constraintEnd_toEndOf="@+id/btnr_sign_up"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toStartOf="@+id/btnr_sign_up"
+           app:layout_constraintTop_toBottomOf="@+id/btnr_sign_up"
+           app:strokeColor="@color/brand_beige"
+           app:strokeWidth="3dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

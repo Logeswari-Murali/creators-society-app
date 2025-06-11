@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CreatorSociety" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/brand_0</item>
+        <item name="colorPrimaryVariant">@color/brand_1</item>
+        <item name="colorSecondary">@color/brand_3</item>
+        <item name="colorSecondaryVariant">@color/brand_4</item>
+        <item name="colorAccent">@color/brand_7</item>
+
+        <!-- Backgrounds & Text -->
+        <item name="android:windowBackground">@color/brand_0</item>
+        <item name="android:textColorPrimary">@color/brand_8</item>
+        <item name="android:textColorSecondary">@color/brand_beige</item>
+
+        <!-- Error Messages -->
+        <item name="android:colorError">@color/colorError</item>
+    </style>
+
+    <style name="BottomNavTextStyle">
+        <item name="android:textSize">12sp</item>  <!-- Adjust size -->
+        <item name="android:fontFamily">@font/montserrat_semibold</item> <!-- Use your font -->
+        <item name="android:textAllCaps">false</item>  <!-- Optional -->
+    </style>
+
+    <style name="CustomPopupMenu" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:popupBackground">@color/custom_popup_bg</item>
+        <item name="android:textColor">@color/custom_popup_text</item>
+    </style>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="brand_0">#2E1905</color>
+    <color name="brand_1">#4F3017</color>
+    <color name="brand_2">#7A4F2F</color>
+    <color name="brand_3">#A26D47</color>
+    <color name="brand_4">#C4926C</color>
+    <color name="brand_5">#D9AB89</color>
+    <color name="brand_6">#EEC6A9</color>
+    <color name="brand_7">#EED9C4</color>
+    <color name="brand_8">#F5E7DA</color>
+    <color name="brand_9">#FFF8F8FF</color>
+    <color name="brand_beige">#EDE8D0</color>
+
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#A5A5A5</color>
+    <color name="black">#000000</color>
+
+    <!-- Error and success Color -->
+    <color name="colorError">#B00020</color>
+    <color name="colorSuccess">#4CAF50</color><!-- Success Green -->
+
+    <color name="custom_popup_bg">#EDE8D0</color> <!-- Dark background -->
+    <color name="custom_popup_text">#949494</color> <!-- grey text -->
+
+</resources>
+

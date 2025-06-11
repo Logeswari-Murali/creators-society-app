@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:background="@color/brand_0"
+    tools:context=".CreatorToolkitFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Section Header -->
+        <TextView
+            android:id="@+id/resourcesHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creator’s Toolkit"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textColor="@color/brand_beige"
+            android:fontFamily="@font/libre_baskerville_bold"
+            android:layout_margin="7dp"/>
+
+        <!-- Sell Your Work Section -->
+        <TextView
+            android:id="@+id/sellSectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingTop="17dp"
+            android:layout_margin="10dp"
+            android:text="Sell Your Work"
+            android:textColor="@color/brand_beige"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎨 Artists"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/brand_beige"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <Button
+            android:id="@+id/btnEtsy"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Sell on Etsy"
+            app:cornerRadius="7dp"
+            android:fontFamily="@font/poppins_bold"
+            android:backgroundTint="@color/brand_beige"
+            android:textColor="@color/brand_0"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnRedbubble"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Sell on ArtPal"
+            app:cornerRadius="7dp"
+            android:fontFamily="@font/poppins_bold"
+            android:backgroundTint="@color/brand_beige"
+            android:textColor="@color/brand_0"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📖 Writers"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/brand_beige"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <Button
+            android:id="@+id/btnKDP"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Publish on Amazon KDP"
+            app:cornerRadius="7dp"
+            android:fontFamily="@font/poppins_bold"
+            android:backgroundTint="@color/brand_beige"
+            android:textColor="@color/brand_0"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnNotionPress"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Publish on Notion Press"
+            app:cornerRadius="7dp"
+            android:fontFamily="@font/poppins_bold"
+            android:backgroundTint="@color/brand_beige"
+            android:textColor="@color/brand_0"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/PricingGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingTop="17dp"
+            android:layout_margin="10dp"
+            android:text="Pricing Guide"
+            android:textColor="@color/brand_beige"
+            android:textSize="20sp" />
+
+        <!-- Pricing Guide -->
+        <TextView
+            android:id="@+id/pricingGuide"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Pricing_Guide"
+            android:textSize="14sp"
+            android:textColor="@color/brand_beige"
+            android:fontFamily="@font/montserrat_medium" />
+
+        <TextView
+            android:id="@+id/pricingGuideLearnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn More"
+            android:textSize="14sp"
+            android:textColor="@color/brand_beige"
+            android:fontFamily="@font/montserrat_bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/CandL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingTop="17dp"
+            android:layout_margin="10dp"
+            android:text="Copyright And Licensing"
+            android:textColor="@color/brand_beige"
+            android:textSize="20sp" />
+
+        <!-- Copyright & Licensing -->
+        <TextView
+            android:id="@+id/copyrightInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/Copyrights"
+            android:textSize="14sp"
+            android:textColor="@color/brand_beige"
+            android:fontFamily="@font/montserrat_medium" />
+
+        <TextView
+            android:id="@+id/copyrightLearnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn More"
+            android:textSize="14sp"
+            android:textColor="@color/brand_beige"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingTop="5dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- canva -->
+        <TextView
+            android:id="@+id/Canvamood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingTop="17dp"
+            android:layout_margin="10dp"
+            android:text="Canva's Mood Board Maker"
+            android:textColor="@color/brand_beige"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/canvatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/canva"
+            android:textSize="14sp"
+            android:textColor="@color/brand_beige"
+            android:fontFamily="@font/montserrat_medium" />
+
+        <!-- Pinterest -->
+        <TextView
+            android:id="@+id/pinterest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingTop="17dp"
+            android:layout_margin="10dp"
+            android:text="Pinterest"
+            android:textColor="@color/brand_beige"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/pinteresttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/pinterest"
+            android:textSize="14sp"
+            android:textColor="@color/brand_beige"
+            android:fontFamily="@font/montserrat_medium" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

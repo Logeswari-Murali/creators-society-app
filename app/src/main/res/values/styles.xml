@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PopupMenuStyle" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:popupBackground">@color/custom_popup_bg</item>
+        <item name="android:textColor">@color/custom_popup_text</item>
+    </style>
+</resources>

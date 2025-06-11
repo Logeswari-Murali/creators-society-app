@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fadeScrollbars="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brand_beige"
+        tools:context=".ProfileSetupActivity">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Back"
+            android:src="@drawable/icon_left_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/libre_baskerville_bold"
+            android:text="Profile Setup"
+            android:textColor="@color/brand_0"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.389"
+            app:layout_constraintStart_toEndOf="@id/backArrow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="68dp"
+            android:clickable="true"
+            android:src="@drawable/ic_account"
+            app:civ_border_color="@android:color/transparent"
+            app:civ_border_width="3dp"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            app:layout_constraintTop_toBottomOf="@id/textView" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etArtistName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:minHeight="60dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintEnd_toEndOf="@id/profileImage"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@id/profileImage"
+            app:layout_constraintTop_toBottomOf="@id/profileImage">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputArtistName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_semibold"
+                android:maxLength="20"
+                android:minHeight="60dp"
+                android:hint="Artist's Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etArtistType"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="60dp"
+            app:layout_constraintEnd_toEndOf="@id/etArtistName"
+            app:layout_constraintStart_toStartOf="@id/etArtistName"
+            app:layout_constraintTop_toBottomOf="@id/etArtistName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputArtistType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="Artist Type (e.g., Painter, Musician...)" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etArtistNote"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:minHeight="150dp"
+            app:layout_constraintEnd_toEndOf="@id/etArtistType"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/etArtistType"
+            app:layout_constraintTop_toBottomOf="@id/etArtistType">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputArtistNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="Artist’s Note (Bio)"
+                android:inputType="textMultiLine"
+                android:maxLength="500"
+                android:minHeight="150dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/brand_0"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Continue"
+            android:textAlignment="center"
+            android:textColor="@color/brand_beige"
+            android:textSize="16sp"
+            app:cornerRadius="7dp"
+            app:layout_constraintEnd_toEndOf="@id/etArtistNote"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@id/etArtistNote"
+            app:layout_constraintTop_toBottomOf="@id/etArtistNote" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

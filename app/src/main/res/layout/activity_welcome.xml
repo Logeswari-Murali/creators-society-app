@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand_beige"
+    android:layout_gravity="center"
+    tools:context=".WelcomeActivity">
+
+    <!-- Display Text1 -->
+
+    <!-- Display Text2 -->
+
+    <TextView
+        android:id="@+id/log_inTxt"
+        android:layout_width="311dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/libre_baskerville_bold"
+        android:text="@string/welcome_to"
+        android:textAlignment="center"
+        android:textColor="@color/brand_0"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wlc_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/libre_baskerville_bold"
+        android:text="@string/the_creator_society"
+        android:textColor="@color/brand_0"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/log_inTxt"
+        app:layout_constraintStart_toStartOf="@+id/log_inTxt"
+        app:layout_constraintTop_toBottomOf="@+id/log_inTxt" />
+
+    <!-- Welcome Img -->
+    <ImageView
+        android:id="@+id/wlc_img"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="56dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/welcome_img"
+        app:layout_constraintEnd_toEndOf="@+id/wlc_txt2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/wlc_txt2"
+        app:layout_constraintTop_toBottomOf="@+id/wlc_txt2" />
+
+    <!-- Welcome text1 -->
+    <TextView
+        android:id="@+id/tv_fpassword"
+        android:layout_width="386dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/libre_baskerville_bold"
+        android:text="@string/to_create_is_to_breathe_life_into_your_thoughts"
+        android:textAlignment="center"
+        android:textColor="@color/brand_0"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/wlc_img"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="@+id/wlc_img"
+        app:layout_constraintTop_toBottomOf="@+id/wlc_img" />
+
+    <!-- Welcome text2 -->
+    <TextView
+        android:id="@+id/wlc_txt4"
+        android:layout_width="378dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/libre_baskerville_bold"
+        android:text="@string/to_share_is_to_build_a_world_beyond_yourself"
+        android:textAlignment="center"
+        android:textColor="@color/brand_0"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fpassword"
+        app:layout_constraintStart_toStartOf="@+id/tv_fpassword"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fpassword" />
+
+    <!-- nav btn -->
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/unfold_the_canvas"
+        android:textColor="@color/brand_beige"
+        android:textSize="18sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/wlc_txt4"
+        app:layout_constraintStart_toStartOf="@+id/wlc_txt4"
+        app:layout_constraintTop_toBottomOf="@+id/wlc_txt4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

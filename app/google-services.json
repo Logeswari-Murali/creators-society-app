@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "793856417382",
+    "project_id": "creator-society-7c105",
+    "storage_bucket": "creator-society-7c105.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793856417382:android:80a969025d597e0f6d97a7",
+        "android_client_info": {
+          "package_name": "com.example.creatorsociety"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzWDctI7rQvEpZHV8BqMxiZCQ98E2HYDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
